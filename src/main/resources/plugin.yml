@@ -1,0 +1,13 @@
+name: ${project.name}
+main: com.aleksey.LeafShears.LeafShears
+version: ${project.version}
+author: Aleksey-Terzi
+description: 'LeafShears'
+softdepend: [Citadel]
+commands:
+  lsh:
+    description: Gives leaf shears.
+permissions:
+    LeafShears.op:
+        description: Special power for ops
+        default: op
