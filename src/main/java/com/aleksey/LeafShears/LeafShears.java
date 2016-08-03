@@ -19,9 +19,19 @@ public class LeafShears extends JavaPlugin {
     	return instance.getLogger();
     }
     
+    private static ConfigManager configManager;
+    public static ConfigManager getConfigManager() {
+    	return configManager;
+    }
+    
     @Override
     public void onEnable() {
     	instance = this;
+    	
+        // Load configuration
+    	configManager = new ConfigManager();
+        configManager.load(getConfig());
+        saveConfig();
     	
         // register events
         getServer().getPluginManager().registerEvents(new EventListener(), this);

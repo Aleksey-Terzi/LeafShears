@@ -3,7 +3,7 @@ main: com.aleksey.LeafShears.LeafShears
 version: ${project.version}
 author: Aleksey-Terzi
 description: 'LeafShears'
-softdepend: [Citadel]
+depend: [Citadel]
 commands:
   lsh:
     description: Gives leaf shears.

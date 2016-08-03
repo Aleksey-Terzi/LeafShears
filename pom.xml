@@ -6,7 +6,7 @@
   <groupId>com.aleksey</groupId>
   <artifactId>LeafShears</artifactId>
   <packaging>jar</packaging>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.1-SNAPSHOT</version>
   <name>LeafShears</name>
   <url>https://github.com/Aleksey-Terzi/LeafShears</url>
   
@@ -26,6 +26,12 @@
       <groupId>org.spigotmc</groupId>
       <artifactId>spigot-api</artifactId>
       <version>1.10-R0.1-SNAPSHOT</version>
+      <scope>provided</scope>
+    </dependency>
+	<dependency>
+	  <groupId>vg.civcraft.mc.citadel</groupId>
+      <artifactId>Citadel</artifactId>
+      <version>3.5.4</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>
